@@ -44,7 +44,7 @@ dag = DAG(
     schedule_interval='05 07 * * *'
 )
 
-engine  = create_engine('mysql+pymysql://etl:1qaz@WSX@192.168.20.249/airflow')
+engine  = create_engine('mysql+pymysql://etl:password@WSX@192.168.xx.xxx/airflow')
 
 instance_list = pd.read_sql_table(table_name='task_instance',con=engine)
 
