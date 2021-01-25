@@ -8,7 +8,7 @@
 
 通过观察,DAG一旦触发,airflow数据库中task_instance表会生成DAG中所有的task_instance.通过观察表数据,发现DAG中所有task的execute_time都会同时生成,且时间为任务触发的时间. 如下图所示:
 
-<img src='/home/xyh/Pictures/task_instance.png'>
+<img src='Pictures/task_instance.png'>
 
 **同时发现 state列为task_instance此时的状态.(实时更新).DAG刚触发时,优先级高的task的state为running.其它等待的task,state为None.一旦某个task完成了,假如执行成功.state会从running更新为success,未执行的开始执行,state从None更新为running.**
 
