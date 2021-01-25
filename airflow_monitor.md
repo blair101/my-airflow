@@ -67,7 +67,7 @@ dag_id = df['dag_id'].values[0]
 
 content = "现在DAG中有{0}个任务 现在完成了{1}个,未完成{2}个,完成率{3}%".format(total_number,success_number,no_runing,success_rate)
 
-send_to_email = ['xyh650209@163.com']
+send_to_email = ['xxx_your_email@163.com']
 
 email_tail= "{} 任务完成情况".format(dag_id)
 
