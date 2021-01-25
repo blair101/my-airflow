@@ -18,7 +18,6 @@
 ```python
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Author  : xuyinghao
 
 import pandas as pd
 from datetime import datetime,timedelta
