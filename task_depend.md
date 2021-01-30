@@ -82,7 +82,7 @@ dag = DAG(
     template_searchpath=path
 )
 
-engine  = create_engine('mysql+pymysql://etl:1qaz@WSX@192.192.0.201/WKL')
+engine  = create_engine('mysql+pymysql://username:password@WSX@192.192.0.xxx/WKL')
 
 # 任务表
 task_table = pd.read_sql_table(table_name='TASK_TABLE',con=engine)
