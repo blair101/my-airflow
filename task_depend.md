@@ -37,7 +37,6 @@ airflow的task的依赖关系需要在python脚本中配置,一旦任务比较�
 
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Author  : xuyinghao
 
 from  airflow import  DAG
 from  airflow.operators.bash_operator import BashOperator
