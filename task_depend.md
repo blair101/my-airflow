@@ -6,7 +6,7 @@ airflow的task的依赖关系需要在python脚本中配置,一旦任务比较�
 
 ### 方案
 
-因为现在的任务类型都是shell脚本形式,每个task需要改到的地方也就是kettle脚本的名称.所以可以在mysql建任务表将任务写入表中,同时通过字段INDXE来标示任务.
+因为现在的任务类型都是shell脚本形式,每个task需要改到的地方也就是 kettle Script/HQL Script/Spark Script 的名称.所以可以在mysql建任务表将任务写入表中,同时通过字段INDXE来标示任务.
 
 `任务表`
 
