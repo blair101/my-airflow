@@ -10,6 +10,8 @@ airflow的task的依赖关系需要在python脚本中配置,一旦任务比较�
 
 `任务表`
 
+> `id`, `INDEX`, `TASK`, `AUTHOR`, `CREATE_TIME`, `UPDATE_TIME`
+
 | INDEX | TASK |
 |--------|--------|
 |     ods_asset_pay_detail   |   BashOperator(task_id='ods_asset_pay_detail',bash_command='sh /home/app/airflow/bash/test.sh public ods_asset_pay_detail.ktr ',dag=dag)     |
